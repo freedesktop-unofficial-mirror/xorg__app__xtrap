@@ -94,6 +94,11 @@ SOFTWARE.
 #ifndef vaxc
 #define globalref extern
 #endif
+#ifdef Lynx     
+extern char *optarg;     
+extern int optind;     
+extern int opterr;     
+#endif     
 
 static Boolean grabFlag = False;
 
