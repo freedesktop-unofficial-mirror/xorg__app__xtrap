@@ -1,4 +1,4 @@
-/* $XFree86$ */
+/* $XFree86: xc/programs/xtrap/xtrapproto.c,v 1.4 2003/05/27 22:27:13 tsi Exp $ */
 /*
  * @DEC_COPYRIGHT@
  */
