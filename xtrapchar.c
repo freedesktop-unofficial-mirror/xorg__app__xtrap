@@ -1,4 +1,4 @@
-/* $XFree86: xc/programs/xtrap/xtrapchar.c,v 1.3 2001/12/12 00:43:50 dawes Exp $ */
+/* $XFree86$ */
 /*
  * @DEC_COPYRIGHT@
  */
