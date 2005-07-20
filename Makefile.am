@@ -33,8 +33,8 @@ bin_PROGRAMS = \
 # 
 # xtrapchar
 #
-xtrapchar_CFLAGS = $(DEP_CFLAGS)
-xtrapchar_LDADD = $(DEP_LIBS)
+xtrapchar_CFLAGS = $(XTRAP_CFLAGS)
+xtrapchar_LDADD = $(XTRAP_LIBS)
 
 xtrapchar_SOURCES = \
         xtrapchar.c \
@@ -46,8 +46,8 @@ xtrapchar_SOURCES = \
 #
 # xtrapin
 # 
-xtrapin_CFLAGS = $(DEP_CFLAGS) -D_BSD_SOURCE
-xtrapin_LDADD = $(DEP_LIBS)
+xtrapin_CFLAGS = $(XTRAP_CFLAGS) -D_BSD_SOURCE
+xtrapin_LDADD = $(XTRAP_LIBS)
 
 xtrapin_SOURCES = \
 	xtrapin.c \
@@ -57,8 +57,8 @@ xtrapin_SOURCES = \
 #
 # xtrapout
 #
-xtrapout_CFLAGS = $(DEP_CFLAGS) -D_BSD_SOURCE
-xtrapout_LDADD = $(DEP_LIBS)
+xtrapout_CFLAGS = $(XTRAP_CFLAGS) -D_BSD_SOURCE
+xtrapout_LDADD = $(XTRAP_LIBS)
 
 xtrapout_SOURCES = \
 	xtrapout.c \
@@ -68,8 +68,8 @@ xtrapout_SOURCES = \
 #
 # xtrapproto
 #
-xtrapproto_CFLAGS = $(DEP_CFLAGS)
-xtrapproto_LDADD = $(DEP_LIBS)
+xtrapproto_CFLAGS = $(XTRAP_CFLAGS)
+xtrapproto_LDADD = $(XTRAP_LIBS)
 
 xtrapproto_SOURCES = \
 	xtrapproto.c
@@ -77,8 +77,8 @@ xtrapproto_SOURCES = \
 #
 # xtrapreset
 #
-xtrapreset_CFLAGS = $(DEP_CFLAGS)
-xtrapreset_LDADD = $(DEP_LIBS)
+xtrapreset_CFLAGS = $(XTRAP_CFLAGS)
+xtrapreset_LDADD = $(XTRAP_LIBS)
 
 xtrapreset_SOURCES = \
 	xtrapreset.c
@@ -86,8 +86,8 @@ xtrapreset_SOURCES = \
 #
 # xtrapstats
 #
-xtrapstats_CFLAGS = $(DEP_CFLAGS)
-xtrapstats_LDADD = $(DEP_LIBS)
+xtrapstats_CFLAGS = $(XTRAP_CFLAGS)
+xtrapstats_LDADD = $(XTRAP_LIBS)
 
 xtrapstats_SOURCES = \
 	xtrapstats.c
@@ -95,8 +95,8 @@ xtrapstats_SOURCES = \
 #
 # xtrapinfo
 #
-xtrapinfo_CFLAGS = $(DEP_CFLAGS)
-xtrapinfo_LDADD = $(DEP_LIBS)
+xtrapinfo_CFLAGS = $(XTRAP_CFLAGS)
+xtrapinfo_LDADD = $(XTRAP_LIBS)
 
 xtrapinfo_SOURCES = \
 	xtrapinfo.c \
