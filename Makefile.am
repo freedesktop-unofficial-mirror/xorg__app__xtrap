@@ -103,6 +103,6 @@ xtrapinfo_SOURCES = \
         XEKeybCtrl.c \
 	XEKeybCtrl.h 
 
-dist_man_MANS = \
+dist_man1_MANS = \
         xtrap.man
 
