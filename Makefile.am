@@ -103,18 +103,18 @@ xtrapinfo_SOURCES = \
         XEKeybCtrl.c \
 	XEKeybCtrl.h 
 
-appman_SOURCES = \
+appman_PRE = \
         xtrap.man
 
 
 appmandir = $(APP_MAN_DIR)
 
-appman_DATA = $(appman_SOURCES:man=@APP_MAN_SUFFIX@) \
+appman_DATA = $(appman_PRE:man=@APP_MAN_SUFFIX@) \
 	      $(man_shadows:=.@APP_MAN_SUFFIX@)
 
 BUILT_SOURCES = shadows.DONE
 
-EXTRA_DIST = $(appman_SOURCES)
+EXTRA_DIST = $(appman_PRE)
 CLEANFILES = $(appman_DATA) $(BUILT_SOURCES)
 
 SED = sed
