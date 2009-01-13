@@ -74,7 +74,7 @@ main(int argc, char *argv[])
     XSynchronize(dpy, True);
 #endif
     printf("Display:  %s \n", DisplayString(dpy));
-    if ((tc = XECreateTC(dpy,0L, NULL)) == False)
+    if ((tc = XECreateTC(dpy,0L, NULL)) == NULL)
     {
         fprintf(stderr,"%s: could not initialize extension\n",argv[0]);
         exit(1L);

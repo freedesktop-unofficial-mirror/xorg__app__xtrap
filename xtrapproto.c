@@ -75,7 +75,7 @@ main(int argc, char *argv[])
         (Cardinal)NULL);
     dpy = XtDisplay(appW);
     printf("Display:  %s \n", DisplayString(dpy));
-    if ((tc = XECreateTC(dpy,0L, NULL)) == False)
+    if ((tc = XECreateTC(dpy,0L, NULL)) == NULL)
     {
         fprintf(stderr,"%s: could not initialize extension\n",argv[0]);
         exit(1L);

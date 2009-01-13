@@ -116,9 +116,9 @@ static void print_evt_callback (XETC *tc , XETrapDatum *data ,
     char *my_buf );
 
 
-FILE *ofp;
-Bool GlobalDone = False;
-XrmOptionDescRec optionTable [] = 
+static FILE *ofp;
+static Bool GlobalDone = False;
+static XrmOptionDescRec optionTable [] = 
 {
     {"-f",     "*script",    XrmoptionSepArg,  (caddr_t) NULL},
     {"-e",     "*eventFlag", XrmoptionSkipArg, (caddr_t) NULL},
@@ -231,7 +231,7 @@ main(int argc, char *argv[])
     XSynchronize(dpy, True);
 #endif
     fprintf(stderr,"Display:  %s \n", DisplayString(dpy));
-    if ((tc = XECreateTC(dpy,0L, NULL)) == False)
+    if ((tc = XECreateTC(dpy,0L, NULL)) == NULL)
     {
         fprintf(stderr,"%s: could not initialize XTrap extension\n",ProgName);
         exit (1L);

@@ -31,3 +31,7 @@ xtrapreset.1
 xtrapstats
 xtrapstats.1
 *~
+*.o
+xtrap-*.tar.*
+ChangeLog
+tags
