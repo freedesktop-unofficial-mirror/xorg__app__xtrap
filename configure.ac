@@ -30,6 +30,7 @@ AM_MAINTAINER_MODE
 m4_ifndef([XORG_MACROS_VERSION], [AC_FATAL([must install xorg-macros 1.2 or later before running autoconf/autogen])])
 XORG_MACROS_VERSION(1.2)
 
+AC_TYPE_SIGNAL
 AM_CONFIG_HEADER(config.h)
 
 AC_PROG_CC
