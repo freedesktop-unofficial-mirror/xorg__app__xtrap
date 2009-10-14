@@ -46,7 +46,7 @@ xtrapchar_SOURCES = \
 #
 # xtrapin
 # 
-xtrapin_CFLAGS = -D_BSD_SOURCE
+xtrapin_CFLAGS = -D_BSD_SOURCE $(AM_CFLAGS)
 xtrapin_LDADD = $(XTRAP_APP_LIBS)
 
 xtrapin_SOURCES = \
@@ -57,7 +57,7 @@ xtrapin_SOURCES = \
 #
 # xtrapout
 #
-xtrapout_CFLAGS = -D_BSD_SOURCE
+xtrapout_CFLAGS = -D_BSD_SOURCE $(AM_CFLAGS)
 xtrapout_LDADD = $(XTRAP_APP_LIBS)
 
 xtrapout_SOURCES = \
