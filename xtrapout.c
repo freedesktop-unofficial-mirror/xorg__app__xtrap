@@ -90,8 +90,6 @@ SOFTWARE.
 
 #ifdef HAVE_CONFIG_H
 #include "config.h"
-#else
-#define RETSIGTYPE void
 #endif
 
 #include <stdio.h>
@@ -115,7 +113,7 @@ extern int opterr;
 
 
 /* Forward declarations */
-static RETSIGTYPE SetGlobalDone (int unused );
+static void SetGlobalDone (int unused );
 static void print_req_callback (XETC *tc , XETrapDatum *data , 
     BYTE *my_buf );
 static void print_evt_callback (XETC *tc , XETrapDatum *data , 
