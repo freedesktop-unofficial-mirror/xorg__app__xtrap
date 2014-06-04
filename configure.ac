@@ -21,8 +21,13 @@ dnl  PERFORMANCE OF THIS SOFTWARE.
 dnl
 dnl Process this file with autoconf to create configure.
 
+# Initialize Autoconf
 AC_PREREQ([2.60])
 AC_INIT(xtrap,[1.0.2], [https://bugs.freedesktop.org/enter_bug.cgi?product=xorg],xtrap)
+AC_CONFIG_SRCDIR([Makefile.am])
+AC_CONFIG_HEADERS([config.h])
+
+# Initialize Automake
 AM_INIT_AUTOMAKE([dist-bzip2])
 AM_MAINTAINER_MODE
 
@@ -30,8 +35,6 @@ AM_MAINTAINER_MODE
 m4_ifndef([XORG_MACROS_VERSION],
 	  [m4_fatal([must install xorg-macros 1.3 or later before running autoconf/autogen])])
 XORG_MACROS_VERSION(1.3)
-
-AM_CONFIG_HEADER(config.h)
 
 AC_PROG_CC
 AM_PROG_CC_C_O
